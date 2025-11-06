@@ -110,7 +110,12 @@
     else if (action === 'pause') togglePause();
     else if (action === 'music') toggleMusic();  // usa o mesmo toggle de música
   }
-
+    function rotateCur(){
+    const r=rotate(cur.shape);
+    const trial={...cur,shape:r};
+    if(!collide(board,trial)){
+    cur.shape=r;
+  } else {
   // ==========================================================================
 
   // Garantir funcionamento dos botões do topo (Pausa e Música) no iOS/Android e desktop
