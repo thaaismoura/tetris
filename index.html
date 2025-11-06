@@ -7,7 +7,6 @@
   <meta name="description" content="Tetris responsivo para PC e celular. Créditos: Thaís Moura." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <!-- Dica: troque por fonte exportada do Canva via @font-face no style.css -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -33,12 +32,9 @@
             <li><strong>Linhas p/ subir:</strong> <span id="linesToNext">5</span></li>
           </ul>
         </div>
-        <div class="card">
-          <h2>Próxima Peça</h2>
-          <canvas id="nextCanvas" width="96" height="96" aria-label="Pré-visualização da próxima peça"></canvas>
-        </div>
-        <div class="card note">
-          <p>Complete <strong>5 linhas</strong> para avançar de nível. Cada nível aumenta a velocidade.</p>
+        <div class="card mini-next">
+          <h2>Próxima</h2>
+          <canvas id="nextCanvas" width="64" height="64" aria-label="Próxima peça"></canvas>
         </div>
       </aside>
 
